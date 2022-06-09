@@ -1,0 +1,294 @@
+/* font family-HEAD */
+@font-face {
+    font-family: 'HangeulNuri-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* font family-END */
+body{
+  background-color: #efe7e3;
+}
+.frame{
+  margin: 30px 150px;
+  display: flex;
+  flex-direction: column;
+}
+a{
+  color:black;
+  text-decoration: none;
+}
+a:hover{
+  color:white;
+  transition:0.3s;
+}
+/* navigator */
+.navigator{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
+ul, .site-name{
+  margin: 0;
+}
+.nav-menu{
+  font-weight:400px;
+}
+li{
+  display: inline;
+  margin: 0;
+  margin-left:15px;
+}
+.site-name{
+  font-family: 'Montserrat', sans-serif;
+  font-size:24px;
+  color:gray;
+  font-weight: bold;
+}
+.site-name:hover{
+	color:black;
+}
+
+/* dashboard */
+.dashboard{
+  display:flex;
+  flex-direction:column;
+  margin-top:70px;
+}
+
+.korean-comment{
+  font-family:HangeulNuri-Bold;
+  font-weight:500;
+  font-size:50px;
+}
+.my-name{
+  background-color:pink;
+}
+.my-name:hover{
+  background-color:transparent;
+  color:white;
+  -webkit-text-stroke: 1px black;
+  transition:none;
+}
+.highlight{
+  color:white;
+  -webkit-text-stroke: 1px black;
+}
+.highlight:hover{
+  -webkit-text-stroke: 0px;
+  background-color:pink;
+  transition:none;
+  color:black;
+}
+.type1:hover{
+  background-color:yellowgreen;
+}
+.type2:hover{
+  background-color:skyblue;
+}
+.type3:hover{
+  background-color:purple;
+}
+.english-comment{
+  font-family:'Montserrat', sans-serif;
+  font-style:italic;
+  font-weight: 400;
+  font-size:15px;
+  letter-spacing:-0.3px;
+}
+
+/*recent works*/
+.recent-menu{
+  margin-top:100px;
+}
+.recent-works > h2{
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  color:gray;
+  font-size:15px;
+  text-align:right;
+}
+
+/* footer */
+.footer{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-bottom:100px;
+}
+.footer > .links{
+  width:345px;
+  display:flex;
+  justify-content:space-around;
+}
+.contact{
+  font-family:'Montserrat',sans-serif;
+  font-size:50px;
+  font-weight:700;
+  color:black;
+  margin-bottom:10px; 
+  text-decoration:underline;
+}
+.links a{
+  font-family:'Montserrat',sans-serif;
+  font-size:20px;
+  font-weight:400;
+}
+.footer > .links + p{
+  font-family:'Noto Sans',sans-serif;
+  font-size:15px;
+  font-weight:400;
+  font-style:italic;
+  color:gray;
+  margin-top:10px;
+}
+
+/* info */
+.info{
+  margin-top:40px;
+}
+.profile{
+  display: grid;
+  grid-template:1fr 1fr / 1fr 1fr;
+  grid-template-areas:'pfp aboutMe'
+                      'pfp capability';
+	margin-bottom:50px;
+}
+.pfp{
+  grid-area:pfp;
+  border-radius:15px;
+  width:90%;
+}
+.aboutMe{
+  grid-area:aboutMe;
+}
+.aboutMe > h2, .capability > h2{
+	margin-top:0px;
+	font-size: 2vw;
+	margin-bottom:5px;
+}
+.capability{
+	grid-area:capability;
+}
+.textbox{
+  width: 100%;
+  height: 80%;
+  font-size: 3vh;
+	resize:none;
+}
+.myValues{
+  display: grid;
+  grid-template: repeat(6,1fr) / 200px 1fr;
+  grid-gap:20px;
+  grid-template-areas:'img1 v11'
+                      'img1 v12'
+                      'img2 v21'
+                      'img2 v22'
+                      'img3 v31'
+                      'img3 v32'
+}
+.valueHeader{
+  font-size: 2vw;
+}
+.value1.image{
+  grid-area:img1;
+	width: 200px;
+}
+.value1.text1{
+  grid-area: v11;
+}
+.value1.text2{
+  grid-area: v12;
+}
+.value2.image{
+  grid-area:img2;
+	width: 200px;
+}
+.value2.text1{
+  grid-area: v21;
+}
+.value2.text2{
+  grid-area: v22;
+}
+.value3.image{
+  grid-area:img3;
+	width: 200px;
+}
+.value3.text1{
+  grid-area: v31;
+}
+.value3.text2{
+  grid-area: v32;
+}
+.text1{
+	height: 70%;
+}
+.text2{
+	align-self: end;
+	height: 120%;
+}
+
+/* recent-works */
+.recent-works{
+	display: flex;
+	flex-direction :column;
+}
+.work1{
+	display: flex;
+	flex-direction :row;
+	margin-bottom:100px;
+	align-items:center;
+}
+.work2{
+	display: flex;
+	flex-direction :row-reverse;
+	margin-bottom:100px;
+	align-items:center;
+}
+.work1-img{
+	width: 50%;
+	border-radius:3px;
+	box-shadow: 10px 10px 10px black;
+}
+.work1-info{
+	margin: 0px 20px;
+}
+.work2-img{
+	width: 50%;
+	border-radius:3px;
+	box-shadow: -10px 10px 10px black;
+}
+.work2-info{
+	margin: 0px 20px;
+}
+.work-name{
+	font-family:'Noto Sans KR', sans-serif;
+	font-size:3vw;
+	margin-top:0px;
+	color:white;
+	-webkit-text-stroke: 1px black;
+}
+.work-comment{
+	font-family:'Noto Sans KR', sans-serif;
+	font-size:1.5vw;
+	font-weight:100;
+}
+.more{
+	font-family 'Monteserrat', sans serif;
+	width:content;
+	height:content;
+	font-size:14px;
+	background-color:transparent;
+	outline:none;
+	float:right;
+}
+#work1-name{
+	position:relative;
+	right:60px;
+}
+#work2-name{
+	text-align:right;
+	position:relative;
+	left:60px;
+}
